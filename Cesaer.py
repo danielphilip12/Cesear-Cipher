@@ -1,10 +1,11 @@
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 
+
 def encrypt(string, key):
     string = string.lower()
     new_string = ""
     for i in string:
-        if(i in alphabet):
+        if i in alphabet:
             x = alphabet.index(i)
             new_letter_loc = (x + key) % 26
             new_string += alphabet[new_letter_loc]
@@ -13,7 +14,8 @@ def encrypt(string, key):
 
     return new_string
 
-x = "Hello World"
-encrypted_x = encrypt(x, 7)
-print(x)
-print(encrypted_x)
+
+string = "Hello World I am Daniel"
+encrypted_string = encrypt(string, 7)
+print(string)
+print(encrypted_string)
