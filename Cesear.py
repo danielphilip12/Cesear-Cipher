@@ -29,10 +29,4 @@ def decrypt(string, key):
     return new_string
 
 
-# string = "Hello World I am Daniel"
-# encrypted_string = encrypt(string, 7)
-# decrypted_string = decrypt(encrypted_string, 7)
-# print(string)
-# print(encrypted_string)
-# print(decrypted_string)
 

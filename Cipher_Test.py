@@ -11,6 +11,8 @@ class TestCesearCipher(unittest.TestCase):
 
         self.assertEqual(Cesear.encrypt("abc", 23), "xyz")
 
+        self.assertEqual(Cesear.encrypt("Hello", 26), "hello")
+
     def test_decrypt(self):
         x = Cesear.encrypt("Daniel", 1)
         y = Cesear.encrypt("Hello world", 7)
