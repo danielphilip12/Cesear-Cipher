@@ -29,4 +29,8 @@ def decrypt(string, key):
     return new_string
 
 
-
+x = input("Enter a string: ")
+key = int(input("Enter a number between 1-26: "))
+new_x = encrypt(x, key)
+print(x)
+print(new_x)
