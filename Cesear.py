@@ -1,6 +1,9 @@
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 alpha_alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
+#This function encrypts a string. It works by
+#taking each letter in the string and adding the key.
+#This changes the letter
 def encrypt(string, key):
     #string = string.lower()
     new_string = ""
@@ -18,7 +21,9 @@ def encrypt(string, key):
 
     return new_string
 
-
+#This function decrypts a string. It works by
+#taking each letter in the string and subtracting the key from it
+#in order to get the original letter
 def decrypt(string, key):
     #string = string.lower()
     new_string = ""
@@ -36,10 +41,3 @@ def decrypt(string, key):
 
     return new_string
 
-
-# word = "Hello World"
-# en = encrypt(word, 7)
-# de = decrypt(en, 7)
-# print(word)
-# print(en)
-# print(de)
